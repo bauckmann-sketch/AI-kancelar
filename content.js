@@ -29,8 +29,9 @@ const CONTENT = {
 
     // ─── HERO SEKCE ────────────────────────────
     hero: {
-        heading: "Ovládněte AI nástroje.\nOd kanceláře po vlastního agenta.",
-        subheading: "Podívejte se na záznam webináře a zjistěte, jak AI změní vaši každodenní práci. Pak si vyberte cestu, která sedí právě vám.",
+        heading: "AI vám už dnes může šetřit hodiny práce.",
+        headingSecondary: "Od každodenní kancelářské agendy až po vlastní AI systémy a agenty, které za vás řeší celé procesy.",
+        subheading: "Podívejte se na záznam webináře a objevte, jak konkrétně může AI fungovat ve vaší práci. A pak si vyberte další krok podle toho, kam chcete AI ve svém pracovním i osobním životě posunout.",
         youtubeId: "4DIzoa3lqLo",
     },
 
@@ -45,7 +46,7 @@ const CONTENT = {
         {
             id: "kancelar",
             color: "orange",
-            badge: "BEST SELLER",
+            badge: "BESTSELLER",
             icon: "💼",
             title: "AI pro kancelář",
             subtitle: "Konkrétní nástroje, které vám okamžitě ušetří hodiny práce. Žádná teorie — jen výsledky.",
@@ -64,8 +65,7 @@ const CONTENT = {
             ],
             ctaLabel: "CHCI BALÍČEK SE SLEVOU 37 %",
             ctaUrl: "https://www.inovatix.cz/skoleni",
-            extraInfo: "Každý webinář samostatně za 1 200 Kč. V balíčku všech 6 za zvýhodněnou cenu. Navíc ihned získáte záznam z posledního webináře — na živém se pak můžete ptát na konkrétní dotazy.",
-            bonusNote: "🎓 Sleva 20 % na AI Akademii, pokud se ji rozhodnete v budoucnu absolvovat celou.",
+            extraInfo: "Každý webinář samostatně za 1 200 Kč. V balíčku všech 6 za zvýhodněnou cenu. Navíc ihned získáte záznam z posledního webináře — na živém se pak můžete ptát na konkrétní dotazy. 🎓 Sleva 20 % na AI Akademii, pokud se ji rozhodnete v budoucnu absolvovat celou.",
         },
         {
             id: "akademie",
@@ -87,7 +87,7 @@ const CONTENT = {
             ],
             ctaLabel: "CHCI NA AKADEMII",
             ctaUrl: "https://www.inovatix.cz/skoleni/jarni-ai-akademie-2026",
-            extraInfo: "Pro začátečníky i pokročilé. Pro freelancery, firmy, pedagogy i zvědavce. Dostanete přístup ke sdílenému ChatGPT účtu po dobu kurzu.",
+            extraInfo: "Pro všechny, od úplných začátečníků po pokročilejší uživatele. Dostanete přístup ke sdílenému ChatGPT účtu po dobu kurzu.",
         },
         {
             id: "architekt",
@@ -110,15 +110,15 @@ const CONTENT = {
             ],
             ctaLabel: "CHCI STAVĚT AGENTY",
             ctaUrl: "https://www.inovatix.cz/skoleni/ai-agent-architekt-stavba-autonomnich-ai-systemu",
-            extraInfo: "Pro vizionáře, freelancery a technické lídry. Záznamy ze všech webinářů. Vše přehledně v Notion – dostupné 6 měsíců po skončení.",
+            extraInfo: "Pro všechny, kteří chtějí převést svou rutinní práci na AI. Záznamy ze všech webinářů. Vše přehledně v Notion – dostupné 6 měsíců po skončení.",
         },
     ],
 
     // ─── ABOUT US ─────────────────────────────
     aboutUs: {
         title: "Kdo za tím stojí?",
-        subtitle: "AI v kostce — podcast, který poslouchá přes 35 000 lidí",
-        text: "Jsme David a Martin z Inovatixu. Stojíme za podcastem AI v kostce, který je jedním z nejposlouchanějších AI podcastů v Česku. Každý týden sdílíme praktické tipy, novinky ze světa umělé inteligence a reálné příběhy firem, které AI už úspěšně nasadily. Naše školení vychází přímo z praxe — učíme to, co sami denně používáme.",
+        subtitle: "",
+        text: "Jsme David a Roman z Inovatixu. Stojíme za podcastem AI v kostce, který je jedním z nejposlouchanějších AI podcastů v Česku. Každý týden sdílíme praktické tipy, novinky ze světa umělé inteligence a reálné příběhy firem, které AI už úspěšně nasadily. Naše školení vychází přímo z praxe — učíme to, co sami denně používáme.",
         stats: [
             { value: "35 000+", label: "posluchačů podcastu" },
             { value: "200+", label: "epizod" },
@@ -135,7 +135,7 @@ const CONTENT = {
             {
                 icon: "🎙️",
                 title: "AI v kostce podcast",
-                text: "Tisíce posluchačů nám důvěřují. Sdílíme reálné zkušenosti, ne buzzwordy.",
+                text: "Tisíce posluchačů nám důvěřují. Ukazujeme AI jednoduše a prakticky - tak, aby ji mohl používat každý.",
             },
             {
                 icon: "🛠️",

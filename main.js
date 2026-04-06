@@ -4,6 +4,7 @@
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", () => {
+    applyTypography(CONTENT);
     renderMeta(CONTENT.meta);
     renderHeader();
     renderHero();
@@ -16,6 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
     initHamburger();
     initScrollAnimations();
 });
+
+/* ─── TYPOGRAPHY ────────────────────────── */
+function applyTypography(obj) {
+    if (typeof obj === 'string') {
+        return obj.replace(/(^|\s)([kKsSvVzZoOuUiIaA])\s+/g, '$1$2\u00A0');
+    }
+    if (Array.isArray(obj)) {
+        for (let i = 0; i < obj.length; i++) {
+            obj[i] = applyTypography(obj[i]);
+        }
+    } else if (typeof obj === 'object' && obj !== null) {
+        for (let key in obj) {
+            obj[key] = applyTypography(obj[key]);
+        }
+    }
+    return obj;
+}
 
 /* ─── META ──────────────────────────────── */
 function renderMeta(metaContent) {
@@ -67,6 +85,16 @@ function renderHero() {
 
     const heading = document.getElementById("heroHeading");
     if (heading) heading.textContent = hero.heading;
+
+    const headingSecondary = document.getElementById("heroHeadingSecondary");
+    if (headingSecondary) {
+        if (hero.headingSecondary) {
+            headingSecondary.textContent = hero.headingSecondary;
+            headingSecondary.style.display = "";
+        } else {
+            headingSecondary.style.display = "none";
+        }
+    }
 
     const sub = document.getElementById("heroSub");
     if (sub) sub.textContent = hero.subheading;

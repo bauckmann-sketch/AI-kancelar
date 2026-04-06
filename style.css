@@ -186,9 +186,19 @@ img {
   line-height: 1.15;
   color: var(--text-dark);
   max-width: 720px;
-  margin: 0 auto 20px;
+  margin: 0 auto 12px;
   letter-spacing: -0.02em;
   white-space: pre-line;
+}
+
+.hero-heading-secondary {
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  max-width: 720px;
+  margin: 0 auto 24px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .hero-sub {
