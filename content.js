@@ -45,7 +45,7 @@ const CONTENT = {
         {
             id: "kancelar",
             color: "orange",
-            badge: "SLEVA 37 %",
+            badge: "BEST SELLER",
             icon: "💼",
             title: "AI pro kancelář",
             subtitle: "Konkrétní nástroje, které vám okamžitě ušetří hodiny práce. Žádná teorie — jen výsledky.",
@@ -65,6 +65,7 @@ const CONTENT = {
             ctaLabel: "CHCI BALÍČEK SE SLEVOU 37 %",
             ctaUrl: "https://www.inovatix.cz/skoleni",
             extraInfo: "Každý webinář samostatně za 1 200 Kč. V balíčku všech 6 za zvýhodněnou cenu. Navíc ihned získáte záznam z posledního webináře — na živém se pak můžete ptát na konkrétní dotazy.",
+            bonusNote: "🎓 Sleva 20 % na AI Akademii, pokud se ji rozhodnete v budoucnu absolvovat celou.",
         },
         {
             id: "akademie",
@@ -105,12 +106,27 @@ const CONTENT = {
                 { icon: "🚀", text: "Cursor, Antigravity, Claude Code", highlight: "— IDE budoucnosti" },
                 { icon: "🔒", text: "Bezpečnost & Provoz", highlight: "— cron, anti-cyklení, best practices" },
                 { icon: "🎁", text: "3× bonusový záznam", bold: true, highlight: "— MAKE, n8n, MCP" },
+                { icon: "📅", text: "Start: 4. května 2026", bold: true, highlight: "" },
             ],
             ctaLabel: "CHCI STAVĚT AGENTY",
             ctaUrl: "https://www.inovatix.cz/skoleni/ai-agent-architekt-stavba-autonomnich-ai-systemu",
             extraInfo: "Pro vizionáře, freelancery a technické lídry. Záznamy ze všech webinářů. Vše přehledně v Notion – dostupné 6 měsíců po skončení.",
         },
     ],
+
+    // ─── ABOUT US ─────────────────────────────
+    aboutUs: {
+        title: "Kdo za tím stojí?",
+        subtitle: "AI v kostce — podcast, který poslouchá přes 35 000 lidí",
+        text: "Jsme David a Martin z Inovatixu. Stojíme za podcastem AI v kostce, který je jedním z nejposlouchanějších AI podcastů v Česku. Každý týden sdílíme praktické tipy, novinky ze světa umělé inteligence a reálné příběhy firem, které AI už úspěšně nasadily. Naše školení vychází přímo z praxe — učíme to, co sami denně používáme.",
+        stats: [
+            { value: "35 000+", label: "posluchačů podcastu" },
+            { value: "200+", label: "epizod" },
+            { value: "500+", label: "proškolených lidí" },
+            { value: "4,9 / 5", label: "hodnocení na Google" },
+        ],
+        podcastUrl: "https://aivkostce.cz/podcasty/",
+    },
 
     // ─── WHY US ────────────────────────────────
     whyUs: {

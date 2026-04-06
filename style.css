@@ -357,6 +357,11 @@ img {
   line-height: 1;
 }
 
+/* Header wrapper — forces prices to align */
+.product-card-header {
+  min-height: 210px;
+}
+
 .product-card-title {
   font-size: 1.4rem;
   font-weight: 800;
@@ -369,7 +374,7 @@ img {
   color: var(--text-body);
   font-size: 0.9rem;
   line-height: 1.55;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 /* Pricing */
@@ -521,6 +526,18 @@ img {
   box-shadow: 0 6px 24px rgba(124, 58, 237, 0.35);
 }
 
+/* Bonus note */
+.product-bonus-note {
+  padding: 12px 28px 20px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--blue-light);
+  border-top: 1px solid rgba(37, 99, 235, 0.15);
+  text-align: center;
+  line-height: 1.45;
+}
+
 /* ─── WHY US SECTION ────────────────────── */
 .why-us {
   padding: 72px 0;
@@ -565,6 +582,78 @@ img {
   font-size: 0.88rem;
   color: var(--text-body);
   line-height: 1.5;
+}
+
+/* ─── ABOUT US SECTION ────────────────── */
+.about-us {
+  padding: 72px 0 80px;
+  background: var(--bg-white);
+  text-align: center;
+}
+
+.about-us-text {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.05rem;
+  color: var(--text-body);
+  line-height: 1.7;
+}
+
+.about-video-wrap {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.04),
+    0 16px 48px rgba(0, 0, 0, 0.1);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.about-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.about-stat-value {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+.about-stat-label {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.btn--outline {
+  display: inline-block;
+  padding: 14px 32px;
+  border: 2px solid var(--orange);
+  border-radius: var(--radius-sm);
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn--outline:hover {
+  background: var(--orange);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(232, 70, 30, 0.3);
 }
 
 /* ─── REVIEWS SECTION ───────────────────── */
@@ -832,6 +921,18 @@ img {
   .why-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .product-card-subtitle {
+    min-height: auto;
+  }
+
+  .product-card-header {
+    min-height: auto;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -949,6 +1050,11 @@ img {
 
   .why-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 
   .footer-col {

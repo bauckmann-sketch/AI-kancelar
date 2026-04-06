@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderHero();
     renderProducts();
     renderWhyUs();
+    renderAboutUs();
     renderReviews();
     renderCtaBanner();
     renderFooter();
@@ -110,23 +111,29 @@ function renderProducts() {
         const body = document.createElement("div");
         body.className = "product-card-body";
 
+        // Header wrapper (fixed height to align prices)
+        const header = document.createElement("div");
+        header.className = "product-card-header";
+
         // Icon
         const icon = document.createElement("span");
         icon.className = "product-card-icon";
         icon.textContent = product.icon;
-        body.appendChild(icon);
+        header.appendChild(icon);
 
         // Title
         const title = document.createElement("h3");
         title.className = "product-card-title";
         title.textContent = product.title;
-        body.appendChild(title);
+        header.appendChild(title);
 
         // Subtitle
         const subtitle = document.createElement("p");
         subtitle.className = "product-card-subtitle";
         subtitle.textContent = product.subtitle;
-        body.appendChild(subtitle);
+        header.appendChild(subtitle);
+
+        body.appendChild(header);
 
         // Price
         const priceWrap = document.createElement("div");
@@ -216,7 +223,46 @@ function renderProducts() {
 
         card.appendChild(footer);
 
+        // Bonus note (below CTA)
+        if (product.bonusNote) {
+            const bonus = document.createElement("div");
+            bonus.className = "product-bonus-note";
+            bonus.textContent = product.bonusNote;
+            card.appendChild(bonus);
+        }
+
         grid.appendChild(card);
+    });
+}
+
+/* ─── ABOUT US ──────────────────────────── */
+function renderAboutUs() {
+    const { aboutUs } = CONTENT;
+    if (!aboutUs) return;
+
+    const title = document.getElementById("aboutUsTitle");
+    if (title) title.textContent = aboutUs.title;
+
+    const subtitle = document.getElementById("aboutUsSubtitle");
+    if (subtitle) subtitle.textContent = aboutUs.subtitle;
+
+    const text = document.getElementById("aboutUsText");
+    if (text) text.textContent = aboutUs.text;
+
+    const btn = document.getElementById("aboutUsBtn");
+    if (btn && aboutUs.podcastUrl) btn.href = aboutUs.podcastUrl;
+
+    const statsGrid = document.getElementById("aboutStats");
+    if (!statsGrid) return;
+
+    aboutUs.stats.forEach((stat) => {
+        const card = document.createElement("div");
+        card.className = "about-stat";
+        card.innerHTML = `
+            <span class="about-stat-value">${stat.value}</span>
+            <span class="about-stat-label">${stat.label}</span>
+        `;
+        statsGrid.appendChild(card);
     });
 }
 
@@ -426,7 +472,7 @@ function initScrollAnimations() {
         { threshold: 0.1 }
     );
 
-    document.querySelectorAll('.product-card, .why-card, .review-card').forEach((el) => {
+    document.querySelectorAll('.product-card, .why-card, .review-card, .about-stat').forEach((el) => {
         el.style.animationPlayState = 'paused';
         observer.observe(el);
     });
