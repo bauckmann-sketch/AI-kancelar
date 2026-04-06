@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PGLFFCV5');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Váš Druhý mozek je připraven!</title>
+    <meta name="description" content="Váš Druhý mozek je připraven! Stáhněte si Notion šablonu a začněte organizovat své úkoly, projekty a poznámky." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Váš Druhý mozek je připraven!" />
+    <meta property="og:description" content="Váš Druhý mozek je připraven! Stáhněte si Notion šablonu a začněte organizovat své úkoly, projekty a poznámky." />
+    <meta property="og:image" content="https://druhy-mozek.aivkostce.cz/notion-preview.png" />
+    <meta property="og:url" content="https://druhy-mozek.aivkostce.cz/thankyou" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+
+</head>
+
+<body class="thankyou-page">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGLFFCV5" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- ═══════════════ HEADER ═══════════════ -->
+    <header class="site-header" id="siteHeader">
+        <div class="header-inner">
+            <a class="logo" id="headerLogo" href="https://aivkostce.cz/">
+                <img src="logo.png" alt="AI v kostce" class="logo-img" />
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="main-nav" id="mainNav"></nav>
+        </div>
+    </header>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="ty-hero" id="tyHero">
+        <div class="container">
+            <h1 class="ty-hero-heading" id="tyHeroHeading"></h1>
+            <p class="ty-hero-sub" id="tyHeroSub"></p>
+        </div>
+    </section>
+
+    <!-- ═══════════════ TEMPLATE DOWNLOAD ═══════════════ -->
+    <section class="ty-section" id="tyTemplate">
+        <div class="container">
+            <div class="ty-card ty-card--accent">
+                <h2 class="ty-card-title" id="tyTemplateTitle"></h2>
+                <p class="ty-card-desc" id="tyTemplateDesc"></p>
+
+                <div class="ty-template-preview"
+                    style="margin: 2rem 0; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+                    <img src="notion-preview.png" alt="Náhled Notion šablony Druhý mozek"
+                        style="width: 100%; display: block;">
+                </div>
+
+                <a class="btn btn--cta" id="tyTemplateBtn" href="#" target="_blank" rel="noopener"></a>
+                <div class="ty-steps" id="tyTemplateSteps"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ COURSE VIDEO ═══════════════ -->
+    <section class="ty-section ty-section--alt" id="tyCourse">
+        <div class="container">
+            <h2 class="ty-section-title" id="tyCourseTitle"></h2>
+            <p class="ty-section-desc" id="tyCourseDesc"></p>
+            <div class="video-wrap">
+                <div class="video-container" id="tyCourseVideo"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ WEBINAR ═══════════════ -->
+    <section class="ty-section" id="tyWebinar">
+        <div class="container">
+            <div class="ty-card">
+                <h2 class="ty-card-title" id="tyWebinarTitle"></h2>
+                <p class="ty-card-desc" id="tyWebinarDesc"></p>
+                <div class="ty-webinar-info" id="tyWebinarInfo"></div>
+                <p class="ty-note" id="tyWebinarNote"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ BONUS ═══════════════ -->
+    <section class="ty-section ty-section--alt" id="tyBonus">
+        <div class="container">
+            <h2 class="ty-section-title" id="tyBonusTitle"></h2>
+            <p class="ty-section-desc" id="tyBonusSub"></p>
+
+            <!-- Canva presentation -->
+            <div class="ty-embed-block" id="tyCanva">
+                <h3 class="ty-embed-title" id="tyCanvaTitle"></h3>
+                <div class="ty-canva-wrap" id="tyCanvaEmbed"></div>
+            </div>
+
+            <!-- Video recording -->
+            <div class="ty-embed-block" id="tyBonusVideo">
+                <h3 class="ty-embed-title" id="tyBonusVideoTitle"></h3>
+                <div class="video-wrap">
+                    <div class="video-container" id="tyBonusVideoEmbed"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ WHATSAPP ═══════════════ -->
+    <section class="ty-section" id="tyWhatsapp">
+        <div class="container">
+            <div class="ty-card ty-card--green">
+                <h2 class="ty-card-title" id="tyWhatsappTitle"></h2>
+                <p class="ty-card-desc" id="tyWhatsappDesc"></p>
+                <div class="ty-whatsapp-row">
+                    <a class="btn btn--whatsapp" id="tyWhatsappBtn" href="#" target="_blank" rel="noopener"></a>
+                    <div class="ty-qr" id="tyWhatsappQr"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer" id="siteFooter">
+        <div class="container footer-grid" id="footerColumns"></div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p id="footerCopyright"></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="content.js"></script>
+    <script src="thankyou-content.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
