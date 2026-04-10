@@ -33,6 +33,7 @@ const CONTENT = {
         headingSecondary: "Od každodenní kancelářské agendy až po vlastní AI systémy a agenty, které za vás řeší celé procesy.",
         subheading: "Podívejte se na záznam webináře a objevte, jak konkrétně může AI fungovat ve vaší práci. A pak si vyberte další krok podle toho, kam chcete AI ve svém pracovním i osobním životě posunout.",
         youtubeId: "4DIzoa3lqLo",
+        thumbnailUrl: "hero-thumbnail.jpg",
     },
 
     // ─── PRODUCTS SECTION ──────────────────────
@@ -64,7 +65,7 @@ const CONTENT = {
                 { icon: "🎁", text: "BONUS: Okamžitý přístup k záznamům", bold: true, highlight: "z minulých webinářů" },
             ],
             ctaLabel: "CHCI BALÍČEK SE SLEVOU 37 %",
-            ctaUrl: "https://www.inovatix.cz/skoleni",
+            ctaUrl: "https://www.inovatix.cz/skoleni/ai-pro-kancelar",
             extraInfo: "Každý webinář samostatně za 1 200 Kč. V balíčku všech 6 za zvýhodněnou cenu. Navíc ihned získáte záznam z posledního webináře — na živém se pak můžete ptát na konkrétní dotazy. 🎓 Sleva 20 % na AI Akademii, pokud se ji rozhodnete v budoucnu absolvovat celou.",
         },
         {
