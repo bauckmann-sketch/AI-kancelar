@@ -32,7 +32,7 @@ const CONTENT = {
         heading: "AI vám už dnes může šetřit hodiny práce.",
         headingSecondary: "Od každodenní kancelářské agendy až po vlastní AI systémy a agenty, které za vás řeší celé procesy.",
         subheading: "Podívejte se na záznam webináře a objevte, jak konkrétně může AI fungovat ve vaší práci. A pak si vyberte další krok podle toho, kam chcete AI ve svém pracovním i osobním životě posunout.",
-        youtubeId: "4DIzoa3lqLo",
+        youtubeId: "fht0SRzG30Q",
         thumbnailUrl: "hero-thumbnail.jpg",
     },
 
